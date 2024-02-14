@@ -2,7 +2,22 @@
 module.exports = {
   content: ["./src/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bg: {
+          50: "#f8f9fa",
+        },
+        ft: {
+          50: "#343a40",
+        },
+        azure: {
+          50: "#008fdb",
+        },
+        amberr: {
+          50: "#b98300",
+        },
+      },
+    },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
