@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome, I'm Federico Cangiotti</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet" />
-
     <link rel="stylesheet" href="../dist/output.css" />
     <style>
       * {
@@ -18,17 +16,9 @@
         padding: 0;
         box-sizing: border-box;
       }
-      body {
-        font-family: "PT Sans", sans-serif;
-      }
       .section-hero {
         height: calc(100vh - 56px);
         height: calc(100svh - 56px);
-      }
-      .painting-about_me {
-        display: grid;
-        grid-template-columns: repeat(8, 75px);
-        grid-template-rows: repeat(8, 75px);
       }
       .painting-item1 {
         grid-row: span 4;
@@ -59,7 +49,7 @@
       }
     </style>
   </head>
-  <body class="text-xl text-ft-50 bg-bg-50">
+  <body class="text-xl text-ft-50 bg-bg-50 font-body">
     <header>
       <nav class="navbar">
         <ul class="flex gap-9 justify-center items-center h-14">
@@ -96,10 +86,9 @@
           <img
             src="./media/images/nioIngrandito.webp"
             alt="profile image"
-            class="rounded-full"
-            style="width: 500px" />
+            class="max-w-[500px] rounded-full md:w-full" />
           <!-- hero text -->
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-5 md:text-center">
             <h1 class="text-6xl">
               Hi!
               <br />
@@ -117,7 +106,7 @@
         class="flex gap-20 justify-center pt-24 pb-0 mt-0 mb-24 lg:flex-col lg:items-center"
         id="work">
         <!-- skills-box-work -->
-        <div class="max-w-sm lg:max-w-xl">
+        <div class="max-w-sm lg:max-w-xl md:mx-14 sm:mx-4">
           <h2 class="mb-5 text-3xl">My skills</h2>
           <p class="text-justify">
             Currently, I am a student at ITTS O. Belluzzi in Rimini, Italy. Over
@@ -218,7 +207,7 @@
       </section>
       <!--<section class="section-projects" id="projects"></section>-->
       <section
-        class="flex gap-24 justify-center py-24 mx-24 lg:flex-col md:mx-14"
+        class="flex gap-24 justify-center py-24 mx-24 lg:flex-col md:mx-14 sm:mx-4"
         id="about_me">
         <div>
           <h2 class="mt-5 mb-4 text-3xl">About myself</h2>
@@ -279,7 +268,8 @@
             <li>MYO (Mondaino Young Orchestra)</li>
           </ul>
         </div>
-        <div class="painting-about_me">
+        <div
+          class="grid grid-cols-[repeat(8,75px)] grid-rows-[repeat(8,75px)] md:flex md:flex-wrap md:justify-center md:gap-5">
           <div class="painting-item1">
             <img
               src="./media/images/malta2.webp"
@@ -321,7 +311,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-12 mx-24 md:mx-14" id="contacts">
+      <section class="pb-12 mx-24 md:mx-14 sm:mx-4" id="contacts">
         <h2 class="text-3xl">Find me on...</h2>
         <div class="flex flex-wrap gap-5 mt-5">
           <a href="https://www.instagram.com/federico.cangiotti">

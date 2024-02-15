@@ -18,6 +18,9 @@ module.exports = {
         },
       },
     },
+    fontFamily: {
+      body: ['"PT Sans"', "ui-sans-serif"],
+    },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
@@ -31,7 +34,7 @@ module.exports = {
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 
-      sm: { max: "639px" },
+      sm: { max: "450px" },
       // => @media (max-width: 639px) { ... }
     },
   },
