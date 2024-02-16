@@ -3,32 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I'm Federico Cangiotti and this is my personal website and portfolio :)" />
     <title>Welcome, I'm Federico Cangiotti</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet" />
-
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      body {
-        font-family: "PT Sans", sans-serif;
-      }
       .section-hero {
         height: calc(100vh - 56px);
         height: calc(100svh - 56px);
-      }
-      .painting-about_me {
-        display: grid;
-        grid-template-columns: repeat(8, 75px);
-        grid-template-rows: repeat(8, 75px);
       }
       .painting-item1 {
         grid-row: span 4;
@@ -59,14 +52,14 @@
       }
     </style>
   </head>
-  <body class="text-xl text-slate-800">
+  <body class="text-xl text-ft-50 bg-bg-50 font-body">
     <header>
       <nav class="navbar">
         <ul class="flex gap-9 justify-center items-center h-14">
           <li>
             <a
               href="#work"
-              class="font-semibold hover:underline hover:decoration-blue-600">
+              class="font-semibold hover:underline hover:decoration-azure-50">
               Work
             </a>
           </li>
@@ -74,14 +67,14 @@
           <li>
             <a
               href="#about_me"
-              class="font-semibold hover:underline hover:decoration-blue-600">
+              class="font-semibold hover:underline hover:decoration-azure-50">
               About me
             </a>
           </li>
           <li>
             <a
               href="#contacts"
-              class="font-semibold hover:underline hover:decoration-blue-600">
+              class="font-semibold hover:underline hover:decoration-azure-50">
               Contacts
             </a>
           </li>
@@ -92,19 +85,19 @@
       <!-- hero section -->
       <section class="flex justify-center items-center section-hero" id="hero">
         <!-- hero container -->
-        <div class="flex gap-20 justify-center items-center">
+        <div
+          class="flex gap-20 justify-center items-center lg:flex-col sm:gap-5">
           <img
             src="./media/images/nioIngrandito.webp"
             alt="profile image"
-            class="rounded-full"
-            style="width: 500px" />
+            class="max-w-[500px] rounded-full md:w-full p-5" />
           <!-- hero text -->
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-5 md:text-center">
             <h1 class="text-6xl">
               Hi!
               <br />
               I'm
-              <span class="underline decoration-amber-400 decoration-4">
+              <span class="underline decoration-amberr-50 decoration-4">
                 Federico Cangiotti
               </span>
             </h1>
@@ -114,10 +107,10 @@
       </section>
       <!-- work section -->
       <section
-        class="flex gap-20 justify-center pt-24 pb-0 mt-0 mb-24"
+        class="flex gap-20 justify-center pt-24 pb-0 mt-0 mb-24 lg:flex-col lg:items-center"
         id="work">
         <!-- skills-box-work -->
-        <div class="max-w-sm">
+        <div class="max-w-sm lg:max-w-xl md:mx-14 sm:mx-4">
           <h2 class="mb-5 text-3xl">My skills</h2>
           <p class="text-justify">
             Currently, I am a student at ITTS O. Belluzzi in Rimini, Italy. Over
@@ -141,31 +134,41 @@
           </p>
         </div>
         <!-- tools-box-work -->
-        <div class="max-w-sm tools-box-work">
-          <h2 class="mb-5 text-3xl">Working tools that I use...</h2>
+        <div class="max-w-sm lg:max-w-xl tools-box-work">
+          <h2 class="mb-5 text-3xl sm:text-center">
+            Working tools that I use...
+          </h2>
           <div class="grid grid-cols-3 grid-rows-1 auto-rows-fr gap-3">
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://endeavouros.com">
-                <img src="./media/svgs/endeavouros.svg" alt="" srcset="" />
+              <a
+                href="https://endeavouros.com"
+                aria-label="Link to endeavouros site">
+                <img
+                  src="./media/svgs/endeavouros.svg"
+                  alt="endeavouros logo" />
               </a>
             </div>
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://kde.org">
-                <img src="./media/svgs/kde.svg" alt="" srcset="" />
+              <a href="https://kde.org" aria-label="Link to kde site">
+                <img src="./media/svgs/kde.svg" alt="kde logo" />
               </a>
             </div>
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://code.visualstudio.com">
-                <img src="./media/svgs/vscode.svg" alt="" srcset="" />
+              <a
+                href="https://code.visualstudio.com"
+                aria-label="Link to visual studio code site">
+                <img
+                  src="./media/svgs/vscode.svg"
+                  alt="visual studio code logo" />
               </a>
             </div>
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://filen.io">
-                <img src="./media/svgs/filen.svg" alt="" srcset="" />
+              <a href="https://filen.io" aria-label="Link to filen site">
+                <img src="./media/svgs/filen.svg" alt="filen logo" />
               </a>
             </div>
             <div
@@ -181,19 +184,19 @@
             </div>
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://affine.pro">
-                <img src="./media/svgs/affine.svg" alt="" srcset="" />
+              <a href="https://affine.pro" aria-label="Link to affine site">
+                <img src="./media/svgs/affine.svg" alt="affine logo" />
               </a>
             </div>
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://penpot.app">
-                <img src="./media/svgs/penpot.svg" alt="" srcset="" />
+              <a href="https://penpot.app" aria-label="Link to penpot site">
+                <img src="./media/svgs/penpot.svg" alt="penpot logo" />
               </a>
             </div>
             <div
               class="flex justify-center items-center w-32 h-32 rounded-md shadow-xl">
-              <a href="https://starship.rs">
+              <a href="https://starship.rs" aria-label="Link to starship site">
                 <img
                   src="./media/images/starship.webp"
                   alt="starship logo"
@@ -205,7 +208,7 @@
           </div>
         </div>
         <!-- experiences-box-work -->
-        <div class="max-w-sm">
+        <div class="max-w-sm lg:max-w-xl">
           <h2 class="mb-5 text-3xl">My work experiences</h2>
           <ul class="ml-5 list-disc">
             <li>
@@ -217,7 +220,9 @@
         </div>
       </section>
       <!--<section class="section-projects" id="projects"></section>-->
-      <section class="flex gap-24 justify-center py-24 mx-24" id="about_me">
+      <section
+        class="flex gap-24 justify-center py-24 mx-24 lg:flex-col md:mx-14 sm:mx-4"
+        id="about_me">
         <div>
           <h2 class="mt-5 mb-4 text-3xl">About myself</h2>
           <p>
@@ -241,14 +246,16 @@
             These playlists are made from me:
             <span>
               <a
-                href="https://open.spotify.com/playlist/0pWlrhsiYyXSqO7UqcVAK2?si=2e41c38447f54e0c">
+                href="https://open.spotify.com/playlist/0pWlrhsiYyXSqO7UqcVAK2?si=2e41c38447f54e0c"
+                aria-label="Link to spotify jazz playlist">
                 Jazz
               </a>
             </span>
             ,
             <span>
               <a
-                href="https://open.spotify.com/playlist/13fsXhXuXIs1XzAjLAUdF8?si=f1b49cd8d84b440e">
+                href="https://open.spotify.com/playlist/13fsXhXuXIs1XzAjLAUdF8?si=f1b49cd8d84b440e"
+                aria-label="Link to spotify gualazzi playlist">
                 Raphael Gualazzi
               </a>
             </span>
@@ -259,7 +266,8 @@
             <li>
               <a
                 class="underline"
-                href="https://open.spotify.com/artist/6hu9cUsJDFg2kUkAAjOepA">
+                href="https://open.spotify.com/artist/6hu9cUsJDFg2kUkAAjOepA"
+                aria-label="Link to spotify artist site">
                 Raphael Gualazzi
               </a>
             </li>
@@ -269,7 +277,8 @@
             <li>
               <a
                 class="underline"
-                href="https://open.spotify.com/artist/2jR6Lr47O21Iq7l5Bs2mig">
+                href="https://open.spotify.com/artist/2jR6Lr47O21Iq7l5Bs2mig"
+                aria-label="Link to spotify artist site">
                 Kristofer Maddigan
               </a>
             </li>
@@ -277,7 +286,8 @@
             <li>MYO (Mondaino Young Orchestra)</li>
           </ul>
         </div>
-        <div class="painting-about_me">
+        <div
+          class="grid grid-cols-[repeat(8,75px)] grid-rows-[repeat(8,75px)] md:flex md:flex-wrap md:justify-center md:gap-5">
           <div class="painting-item1">
             <img
               src="./media/images/malta2.webp"
@@ -319,23 +329,38 @@
           </div>
         </div>
       </section>
-      <section class="pb-12 mx-24" id="contacts">
+      <section class="pb-12 mx-24 md:mx-14 sm:mx-4" id="contacts">
         <h2 class="text-3xl">Find me on...</h2>
         <div class="flex flex-wrap gap-5 mt-5">
-          <a href="https://www.instagram.com/federico.cangiotti">
-            <img src="./media/svgs/instagram.svg" alt="" srcset="" />
+          <a
+            href="https://www.instagram.com/federico.cangiotti"
+            aria-label="Link to instagram profile">
+            <img src="./media/svgs/instagram.svg" alt="instagram logo" />
           </a>
-          <a href="https://discordapp.com/users/852801176968626206">
-            <img src="./media/svgs/discord.svg" alt="" srcset="" />
+          <a
+            href="https://discordapp.com/users/852801176968626206"
+            aria-label="Link to discord profile">
+            <img src="./media/svgs/discord.svg" alt="discord logo" />
           </a>
-          <a href="https://open.spotify.com/user/q8di1q2gi0li1g15l6lhdnlw3">
-            <img src="./media/svgs/spotify.svg" alt="" srcset="" />
+          <a
+            href="https://open.spotify.com/user/q8di1q2gi0li1g15l6lhdnlw3"
+            aria-label="Link to spotify profile">
+            <img src="./media/svgs/spotify.svg" alt="spotify logo" />
           </a>
-          <a href="https://github.com/federicocangiotti">
-            <img src="./media/svgs/github.svg" alt="" srcset="" />
+          <a
+            href="https://gitlab.com/federicocangiotti"
+            aria-label="Link to gitlab profile">
+            <img src="./media/svgs/gitlab.svg" alt="gitlab logo" />
           </a>
-          <a href="https://www.linkedin.com/in/federico-cangiotti-650049229">
-            <img src="./media/svgs/linkedin.svg" alt="" srcset="" />
+          <a
+            href="https://github.com/federicocangiotti"
+            aria-label="Link to github profile">
+            <img src="./media/svgs/github.svg" alt="github logo" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/federico-cangiotti-650049229"
+            aria-label="Link to linkedin profile">
+            <img src="./media/svgs/linkedin.svg" alt="linkedin logo" />
           </a>
         </div>
       </section>
@@ -343,17 +368,33 @@
     <footer class="py-5 mx-5 text-lg">
       <p>
         Powered by open source softwares. Designed with
-        <a class="underline" href="https://penpot.app">Penpot.</a>
+        <a
+          class="underline"
+          href="https://penpot.app"
+          aria-label="Link to penpot site">
+          Penpot.
+        </a>
         Colors provided by
-        <a class="underline" href="https://yeun.github.io/open-color">
+        <a
+          class="underline"
+          href="https://yeun.github.io/open-color"
+          aria-label="Link to open color site">
           Open Color
         </a>
         and
-        <a class="underline" href="https://reasonable.work/colors">
+        <a
+          class="underline"
+          href="https://reasonable.work/colors"
+          aria-label="Link to reasonable colors site">
           Reasonable Colors.
         </a>
         Made with
-        <a class="underline" href="https://tailwindcss.com/">Tailwind.</a>
+        <a
+          class="underline"
+          href="https://tailwindcss.com/"
+          aria-label="Link to tailwindcss site">
+          Tailwind.
+        </a>
       </p>
     </footer>
   </body>
